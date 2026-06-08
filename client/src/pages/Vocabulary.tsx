@@ -92,9 +92,9 @@ export default function Vocabulary() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-8">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 py-8">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-foreground mb-8">
+        <h1 className="text-4xl font-bold text-gray-900 mb-8 font-serif">
           {vocabType === 'nouns' ? t('vocabulary.nouns') : t('vocabulary.verbs')}
         </h1>
 
@@ -103,14 +103,14 @@ export default function Vocabulary() {
           <Button
             variant={vocabType === 'nouns' ? 'default' : 'outline'}
             onClick={() => setVocabType('nouns')}
-            className={vocabType === 'nouns' ? 'bg-amber-600 hover:bg-amber-700' : ''}
+            className={vocabType === 'nouns' ? 'bg-gray-800 hover:bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-100'}
           >
             {t('vocabulary.nouns')}
           </Button>
           <Button
             variant={vocabType === 'verbs' ? 'default' : 'outline'}
             onClick={() => setVocabType('verbs')}
-            className={vocabType === 'verbs' ? 'bg-amber-600 hover:bg-amber-700' : ''}
+            className={vocabType === 'verbs' ? 'bg-gray-800 hover:bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-100'}
           >
             {t('vocabulary.verbs')}
           </Button>
@@ -121,7 +121,7 @@ export default function Vocabulary() {
           {paginatedVocab.map((item) => (
             <Card
               key={item.id}
-              className="p-4 cursor-pointer hover:shadow-md transition-shadow"
+              className="p-4 cursor-pointer hover:shadow-md hover:border-gray-300 transition-all border border-gray-200"
             >
               <button
                 onClick={() => setExpandedId(expandedId === item.id ? null : item.id)}
@@ -130,54 +130,54 @@ export default function Vocabulary() {
                 <div className="flex items-center justify-between">
                   <div className="flex-1 text-left">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-lg font-semibold text-foreground">
+                      <h3 className="text-lg font-semibold text-gray-900">
                         {isNoun(item) ? item.wordJa : item.dictionaryForm}
                       </h3>
-                      <span className="text-sm text-muted-foreground">
+                      <span className="text-sm text-gray-600">
                         {isNoun(item) ? item.kana : item.kana}
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-sm text-muted-foreground">
+                      <span className="text-sm text-gray-700">
                         {isNoun(item) ? item.meaningZh : item.meaningZh}
                       </span>
-                      <span className="inline-block px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">
+                      <span className="inline-block px-2 py-1 bg-gray-200 text-gray-800 rounded text-xs font-semibold">
                         {getPitchAccentDisplay(isNoun(item) ? item.pitchAccent : item.pitchAccent)}
                       </span>
                     </div>
                   </div>
                   {expandedId === item.id ? (
-                    <ChevronUp className="w-5 h-5 text-muted-foreground" />
+                    <ChevronUp className="w-5 h-5 text-gray-400" />
                   ) : (
-                    <ChevronDown className="w-5 h-5 text-muted-foreground" />
+                    <ChevronDown className="w-5 h-5 text-gray-400" />
                   )}
                 </div>
               </button>
 
               {/* Expanded Content */}
               {expandedId === item.id && (
-                <div className="mt-4 pt-4 border-t border-border space-y-3">
+                <div className="mt-4 pt-4 border-t border-gray-200 space-y-3">
                   {isNoun(item) && (
                     <>
                       <div className="grid grid-cols-2 gap-4">
                         <div>
-                          <h4 className="font-semibold text-foreground text-sm mb-1">
+                          <h4 className="font-semibold text-gray-900 text-sm mb-1">
                             {t('vocabulary.kana')}
                           </h4>
-                          <p className="text-sm text-muted-foreground">{item.kana}</p>
+                          <p className="text-sm text-gray-700">{item.kana}</p>
                         </div>
                         <div>
-                          <h4 className="font-semibold text-foreground text-sm mb-1">
+                          <h4 className="font-semibold text-gray-900 text-sm mb-1">
                             {t('vocabulary.romaji')}
                           </h4>
-                          <p className="text-sm text-muted-foreground">{item.romaji}</p>
+                          <p className="text-sm text-gray-700">{item.romaji}</p>
                         </div>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground text-sm mb-1">
+                        <h4 className="font-semibold text-gray-900 text-sm mb-1">
                           {t('vocabulary.category')}
                         </h4>
-                        <p className="text-sm text-muted-foreground">{item.category}</p>
+                        <p className="text-sm text-gray-700">{item.category}</p>
                       </div>
                     </>
                   )}
@@ -186,40 +186,40 @@ export default function Vocabulary() {
                     <>
                       <div className="grid grid-cols-3 gap-4">
                         <div>
-                          <h4 className="font-semibold text-foreground text-sm mb-1">
+                          <h4 className="font-semibold text-gray-900 text-sm mb-1">
                             {t('vocabulary.dictionaryForm')}
                           </h4>
-                          <p className="text-sm text-muted-foreground">{item.dictionaryForm}</p>
+                          <p className="text-sm text-gray-700">{item.dictionaryForm}</p>
                         </div>
                         <div>
-                          <h4 className="font-semibold text-foreground text-sm mb-1">
+                          <h4 className="font-semibold text-gray-900 text-sm mb-1">
                             {t('vocabulary.masuForm')}
                           </h4>
-                          <p className="text-sm text-muted-foreground">{item.masuForm}</p>
+                          <p className="text-sm text-gray-700">{item.masuForm}</p>
                         </div>
                         <div>
-                          <h4 className="font-semibold text-foreground text-sm mb-1">
+                          <h4 className="font-semibold text-gray-900 text-sm mb-1">
                             {t('vocabulary.teForm')}
                           </h4>
-                          <p className="text-sm text-muted-foreground">{item.teForm}</p>
+                          <p className="text-sm text-gray-700">{item.teForm}</p>
                         </div>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground text-sm mb-1">
+                        <h4 className="font-semibold text-gray-900 text-sm mb-1">
                           {t('vocabulary.verbGroup')}
                         </h4>
-                        <p className="text-sm text-muted-foreground">{item.verbGroup}</p>
+                        <p className="text-sm text-gray-700">{item.verbGroup}</p>
                       </div>
                     </>
                   )}
 
                   <div>
-                    <h4 className="font-semibold text-foreground text-sm mb-2">
+                    <h4 className="font-semibold text-gray-900 text-sm mb-2">
                       {t('vocabulary.examples')}
                     </h4>
                     <div className="space-y-1">
                       {item.examples.map((example, idx) => (
-                        <p key={idx} className="text-sm text-muted-foreground">
+                        <p key={idx} className="text-sm text-gray-700">
                           • {example}
                         </p>
                       ))}
@@ -228,14 +228,14 @@ export default function Vocabulary() {
 
                   {item.tags && item.tags.length > 0 && (
                     <div>
-                      <h4 className="font-semibold text-foreground text-sm mb-2">
+                      <h4 className="font-semibold text-gray-900 text-sm mb-2">
                         {t('vocabulary.category')}
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {item.tags.map((tag, idx) => (
                           <span
                             key={idx}
-                            className="inline-block px-2 py-1 bg-amber-100 text-amber-800 rounded text-xs"
+                            className="inline-block px-2 py-1 bg-gray-200 text-gray-800 rounded text-xs"
                           >
                             {tag}
                           </span>
@@ -258,7 +258,7 @@ export default function Vocabulary() {
                 variant={currentPage === page ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => setCurrentPage(page)}
-                className={currentPage === page ? 'bg-amber-600 hover:bg-amber-700' : ''}
+                className={currentPage === page ? 'bg-gray-800 hover:bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-100'}
               >
                 {page}
               </Button>
@@ -266,6 +266,9 @@ export default function Vocabulary() {
           </div>
         )}
       </div>
+
+      {/* Decorative background */}
+      <div className="fixed bottom-0 left-10 w-64 h-64 bg-gray-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10"></div>
     </div>
   );
 }

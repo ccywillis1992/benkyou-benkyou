@@ -75,54 +75,49 @@ export default function Home() {
     }
   };
 
-  // Module cards
+  // Module cards - Simplified
   const modules = [
     {
       id: 'grammar',
       title: t('home.grammarCard'),
-      description: t('home.grammarDesc'),
       href: '/grammar',
-      color: 'from-amber-100 to-orange-100',
+      icon: '📚',
     },
     {
       id: 'nouns',
       title: t('home.nounsCard'),
-      description: t('home.nounsDesc'),
       href: '/vocabulary/nouns',
-      color: 'from-blue-100 to-cyan-100',
+      icon: '🏷️',
     },
     {
       id: 'verbs',
       title: t('home.verbsCard'),
-      description: t('home.verbsDesc'),
       href: '/vocabulary/verbs',
-      color: 'from-green-100 to-emerald-100',
+      icon: '⚡',
     },
     {
       id: 'kana',
       title: t('home.kanaCard'),
-      description: t('home.kanaDesc'),
       href: '/kana',
-      color: 'from-pink-100 to-rose-100',
+      icon: 'あ',
     },
     {
       id: 'practice',
       title: t('home.practiceCard'),
-      description: t('home.practiceDesc'),
       href: '/practice',
-      color: 'from-purple-100 to-violet-100',
+      icon: '✏️',
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50">
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-12 md:py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-serif">
             {t('home.title')}
           </h1>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-gray-600 mb-8 font-light">
             {t('home.subtitle')}
           </p>
 
@@ -141,7 +136,7 @@ export default function Home() {
                       handleSearch(query);
                     }
                   }}
-                  className="w-full pl-4 pr-10 py-3 text-base"
+                  className="w-full pl-4 pr-10 py-3 text-base border-gray-300 focus:border-gray-500"
                 />
                 {query && (
                   <button
@@ -150,7 +145,7 @@ export default function Home() {
                       setShowResults(false);
                       setShowHistory(false);
                     }}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
                   >
                     <X className="w-5 h-5" />
                   </button>
@@ -158,7 +153,7 @@ export default function Home() {
               </div>
               <Button
                 onClick={() => handleSearch(query)}
-                className="px-6 bg-amber-600 hover:bg-amber-700"
+                className="px-6 bg-gray-800 hover:bg-gray-900 text-white"
               >
                 <Search className="w-5 h-5" />
               </Button>
@@ -166,14 +161,14 @@ export default function Home() {
 
             {/* Search History */}
             {showHistory && history.length > 0 && (
-              <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-border rounded-lg shadow-lg z-50 p-4">
+              <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4">
                 <div className="flex justify-between items-center mb-3">
-                  <h3 className="font-semibold text-sm text-foreground">
+                  <h3 className="font-semibold text-sm text-gray-900">
                     {t('search.history')}
                   </h3>
                   <button
                     onClick={clearHistory}
-                    className="text-xs text-muted-foreground hover:text-foreground"
+                    className="text-xs text-gray-500 hover:text-gray-700"
                   >
                     {t('search.clearHistory')}
                   </button>
@@ -186,7 +181,7 @@ export default function Home() {
                         setQuery(item.query);
                         handleSearch(item.query);
                       }}
-                      className="block w-full text-left px-3 py-2 text-sm hover:bg-accent rounded transition-colors"
+                      className="block w-full text-left px-3 py-2 text-sm hover:bg-gray-100 rounded transition-colors text-gray-700"
                     >
                       {item.query}
                     </button>
@@ -197,25 +192,25 @@ export default function Home() {
 
             {/* Search Results */}
             {showResults && (
-              <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-border rounded-lg shadow-lg z-50 max-h-96 overflow-y-auto">
+              <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-96 overflow-y-auto">
                 {results.length > 0 ? (
                   <div>
-                    <div className="px-4 py-3 border-b border-border text-sm text-muted-foreground">
+                    <div className="px-4 py-3 border-b border-gray-200 text-sm text-gray-600">
                       {t('search.resultCount').replace('{count}', results.length.toString())}
                     </div>
                     {results.map((result) => (
                       <button
                         key={result.id}
                         onClick={() => handleResultClick(result)}
-                        className="w-full text-left px-4 py-3 border-b border-border hover:bg-accent transition-colors last:border-b-0"
+                        className="w-full text-left px-4 py-3 border-b border-gray-100 hover:bg-gray-50 transition-colors last:border-b-0"
                       >
-                        <div className="font-semibold text-sm text-foreground">
+                        <div className="font-semibold text-sm text-gray-900">
                           {result.title}
                         </div>
-                        <div className="text-xs text-muted-foreground mt-1">
+                        <div className="text-xs text-gray-600 mt-1">
                           {result.content}
                         </div>
-                        <div className="text-xs text-amber-600 mt-1">
+                        <div className="text-xs text-gray-500 mt-1">
                           {result.type === 'grammar' && '文法'}
                           {result.type === 'noun' && '名詞'}
                           {result.type === 'verb' && '動詞'}
@@ -225,7 +220,7 @@ export default function Home() {
                     ))}
                   </div>
                 ) : (
-                  <div className="px-4 py-6 text-center text-sm text-muted-foreground">
+                  <div className="px-4 py-6 text-center text-sm text-gray-500">
                     {t('search.noResults')}
                   </div>
                 )}
@@ -235,32 +230,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Module Cards */}
+      {/* Module Cards - Simplified */}
       <section className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {modules.map((module) => (
             <Card
               key={module.id}
-              className={`bg-gradient-to-br ${module.color} p-6 cursor-pointer hover:shadow-lg transition-shadow`}
+              className="p-6 cursor-pointer hover:shadow-lg hover:border-gray-300 transition-all border border-gray-200 bg-white"
               onClick={() => navigate(module.href)}
             >
-              <h3 className="text-xl font-bold text-foreground mb-2">
+              <div className="text-4xl mb-3 text-center">{module.icon}</div>
+              <h3 className="text-lg font-semibold text-gray-900 text-center">
                 {module.title}
               </h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                {module.description}
-              </p>
-              <Button
-                variant="default"
-                size="sm"
-                className="bg-amber-600 hover:bg-amber-700"
-              >
-                {t('common.home')}
-              </Button>
             </Card>
           ))}
         </div>
       </section>
+
+      {/* Decorative background elements */}
+      <div className="fixed top-20 left-10 w-64 h-64 bg-gray-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10"></div>
+      <div className="fixed bottom-0 right-10 w-64 h-64 bg-gray-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10"></div>
     </div>
   );
 }

@@ -90,60 +90,65 @@ export default function Practice() {
   // Quiz selection screen
   if (!quizType) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-8">
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 py-8">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-foreground mb-8">{t('practice.title')}</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-8 font-serif">
+            {t('practice.title')}
+          </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Kana Quiz */}
             <Card
-              className="p-6 cursor-pointer hover:shadow-lg transition-shadow bg-gradient-to-br from-pink-100 to-rose-100"
+              className="p-6 cursor-pointer hover:shadow-lg hover:border-gray-300 transition-all border border-gray-200 bg-white"
               onClick={() => handleStartQuiz('kana')}
             >
-              <h3 className="text-xl font-bold text-foreground mb-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
                 {t('practice.kanaQuiz')}
               </h3>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-sm text-gray-600 mb-4">
                 測試你的平假名和片假名知識
               </p>
-              <Button className="w-full bg-amber-600 hover:bg-amber-700">
-                {t('common.home')}
+              <Button className="w-full bg-gray-800 hover:bg-gray-900 text-white">
+                開始練習
               </Button>
             </Card>
 
             {/* Vocabulary Quiz */}
             <Card
-              className="p-6 cursor-pointer hover:shadow-lg transition-shadow bg-gradient-to-br from-blue-100 to-cyan-100"
+              className="p-6 cursor-pointer hover:shadow-lg hover:border-gray-300 transition-all border border-gray-200 bg-white"
               onClick={() => handleStartQuiz('vocab')}
             >
-              <h3 className="text-xl font-bold text-foreground mb-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
                 {t('practice.vocabQuiz')}
               </h3>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-sm text-gray-600 mb-4">
                 選擇正確的詞彙意思
               </p>
-              <Button className="w-full bg-amber-600 hover:bg-amber-700">
-                {t('common.home')}
+              <Button className="w-full bg-gray-800 hover:bg-gray-900 text-white">
+                開始練習
               </Button>
             </Card>
 
             {/* Grammar Quiz */}
             <Card
-              className="p-6 cursor-pointer hover:shadow-lg transition-shadow bg-gradient-to-br from-green-100 to-emerald-100"
+              className="p-6 cursor-pointer hover:shadow-lg hover:border-gray-300 transition-all border border-gray-200 bg-white"
               onClick={() => handleStartQuiz('grammar')}
             >
-              <h3 className="text-xl font-bold text-foreground mb-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
                 {t('practice.grammarQuiz')}
               </h3>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-sm text-gray-600 mb-4">
                 填空文法練習題
               </p>
-              <Button className="w-full bg-amber-600 hover:bg-amber-700">
-                {t('common.home')}
+              <Button className="w-full bg-gray-800 hover:bg-gray-900 text-white">
+                開始練習
               </Button>
             </Card>
           </div>
         </div>
+
+        {/* Decorative background */}
+        <div className="fixed bottom-0 right-10 w-64 h-64 bg-gray-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10"></div>
       </div>
     );
   }
@@ -151,9 +156,9 @@ export default function Practice() {
   // Quiz in progress
   if (!currentQuestion) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-8 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 py-8 flex items-center justify-center">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-lg text-muted-foreground">{t('common.loading')}</p>
+          <p className="text-lg text-gray-600">{t('common.loading')}</p>
         </div>
       </div>
     );
@@ -163,23 +168,23 @@ export default function Practice() {
   if (currentIndex >= filteredQuestions.length) {
     const percentage = Math.round((score / filteredQuestions.length) * 100);
     return (
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-8 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 py-8 flex items-center justify-center">
         <div className="container mx-auto px-4 max-w-md">
-          <Card className="p-8 text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+          <Card className="p-8 text-center border border-gray-200">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               {t('practice.result')}
             </h2>
-            <div className="text-5xl font-bold text-amber-600 mb-4">
+            <div className="text-5xl font-bold text-gray-800 mb-4">
               {percentage}%
             </div>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-gray-700 mb-6">
               {t('practice.score')}: {score} / {filteredQuestions.length}
             </p>
             <Button
               onClick={handleFinish}
-              className="w-full bg-amber-600 hover:bg-amber-700"
+              className="w-full bg-gray-800 hover:bg-gray-900 text-white"
             >
-              {t('common.home')}
+              返回首頁
             </Button>
           </Card>
         </div>
@@ -189,15 +194,15 @@ export default function Practice() {
 
   // Quiz question
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-8">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 py-8">
       <div className="container mx-auto px-4 max-w-2xl">
         {/* Progress */}
         <div className="mb-6">
           <div className="flex justify-between items-center mb-2">
-            <span className="text-sm font-semibold text-foreground">
+            <span className="text-sm font-semibold text-gray-900">
               {t('practice.question')} {currentIndex + 1} / {filteredQuestions.length}
             </span>
-            <span className="text-sm text-muted-foreground">
+            <span className="text-sm text-gray-600">
               {t('practice.score')}: {score}
             </span>
           </div>
@@ -205,13 +210,13 @@ export default function Practice() {
         </div>
 
         {/* Question Card */}
-        <Card className="p-8 mb-6">
-          <h2 className="text-2xl font-bold text-foreground mb-6">
+        <Card className="p-8 mb-6 border border-gray-200">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
             {currentQuestion.question}
           </h2>
 
           {currentQuestion.display && (
-            <div className="text-5xl font-bold text-center text-amber-600 mb-8">
+            <div className="text-5xl font-bold text-center text-gray-800 mb-8">
               {currentQuestion.display}
             </div>
           )}
@@ -236,11 +241,11 @@ export default function Practice() {
                       : answered && isCorrect
                       ? 'border-green-500 bg-green-50'
                       : isSelected
-                      ? 'border-amber-500 bg-amber-50'
-                      : 'border-border hover:border-amber-300'
+                      ? 'border-gray-800 bg-gray-100'
+                      : 'border-gray-300 hover:border-gray-500'
                   } ${answered ? 'cursor-default' : 'cursor-pointer'}`}
                 >
-                  <div className="font-semibold text-foreground">
+                  <div className="font-semibold text-gray-900">
                     {option.text}
                   </div>
                 </button>
@@ -250,11 +255,11 @@ export default function Practice() {
 
           {/* Explanation */}
           {answered && (
-            <div className="mt-6 p-4 bg-slate-100 rounded-lg">
-              <h4 className="font-semibold text-foreground mb-2">
+            <div className="mt-6 p-4 bg-gray-100 rounded-lg border border-gray-300">
+              <h4 className="font-semibold text-gray-900 mb-2">
                 {t('practice.explanation')}
               </h4>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-gray-700">
                 {currentQuestion.explanation}
               </p>
             </div>
@@ -265,7 +270,7 @@ export default function Practice() {
         {answered && (
           <Button
             onClick={handleNext}
-            className="w-full bg-amber-600 hover:bg-amber-700"
+            className="w-full bg-gray-800 hover:bg-gray-900 text-white"
           >
             {currentIndex < filteredQuestions.length - 1
               ? t('practice.next')
@@ -273,6 +278,9 @@ export default function Practice() {
           </Button>
         )}
       </div>
+
+      {/* Decorative background */}
+      <div className="fixed top-40 left-10 w-64 h-64 bg-gray-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10"></div>
     </div>
   );
 }
