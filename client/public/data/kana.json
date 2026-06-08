@@ -1,0 +1,163 @@
+[
+  {
+    "id": "kana-a-row",
+    "row": "あ行",
+    "items": [
+      { "hiragana": "あ", "katakana": "ア", "romaji": "a", "mnemonic": "Apple" },
+      { "hiragana": "い", "katakana": "イ", "romaji": "i", "mnemonic": "Igloo" },
+      { "hiragana": "う", "katakana": "ウ", "romaji": "u", "mnemonic": "Umbrella" },
+      { "hiragana": "え", "katakana": "エ", "romaji": "e", "mnemonic": "Egg" },
+      { "hiragana": "お", "katakana": "オ", "romaji": "o", "mnemonic": "Orange" }
+    ]
+  },
+  {
+    "id": "kana-ka-row",
+    "row": "か行",
+    "items": [
+      { "hiragana": "か", "katakana": "カ", "romaji": "ka", "mnemonic": "Kite" },
+      { "hiragana": "き", "katakana": "キ", "romaji": "ki", "mnemonic": "Kiwi" },
+      { "hiragana": "く", "katakana": "ク", "romaji": "ku", "mnemonic": "Kudo" },
+      { "hiragana": "け", "katakana": "ケ", "romaji": "ke", "mnemonic": "Kettle" },
+      { "hiragana": "こ", "katakana": "コ", "romaji": "ko", "mnemonic": "Koala" }
+    ]
+  },
+  {
+    "id": "kana-sa-row",
+    "row": "さ行",
+    "items": [
+      { "hiragana": "さ", "katakana": "サ", "romaji": "sa", "mnemonic": "Sandwich" },
+      { "hiragana": "し", "katakana": "シ", "romaji": "shi", "mnemonic": "Ship" },
+      { "hiragana": "す", "katakana": "ス", "romaji": "su", "mnemonic": "Sushi" },
+      { "hiragana": "せ", "katakana": "セ", "romaji": "se", "mnemonic": "Seashell" },
+      { "hiragana": "そ", "katakana": "ソ", "romaji": "so", "mnemonic": "Soap" }
+    ]
+  },
+  {
+    "id": "kana-ta-row",
+    "row": "た行",
+    "items": [
+      { "hiragana": "た", "katakana": "タ", "romaji": "ta", "mnemonic": "Tiger" },
+      { "hiragana": "ち", "katakana": "チ", "romaji": "chi", "mnemonic": "Cheese" },
+      { "hiragana": "つ", "katakana": "ツ", "romaji": "tsu", "mnemonic": "Tsunami" },
+      { "hiragana": "て", "katakana": "テ", "romaji": "te", "mnemonic": "Telephone" },
+      { "hiragana": "と", "katakana": "ト", "romaji": "to", "mnemonic": "Tofu" }
+    ]
+  },
+  {
+    "id": "kana-na-row",
+    "row": "な行",
+    "items": [
+      { "hiragana": "な", "katakana": "ナ", "romaji": "na", "mnemonic": "Noodle" },
+      { "hiragana": "に", "katakana": "ニ", "romaji": "ni", "mnemonic": "Ninja" },
+      { "hiragana": "ぬ", "katakana": "ヌ", "romaji": "nu", "mnemonic": "Nut" },
+      { "hiragana": "ね", "katakana": "ネ", "romaji": "ne", "mnemonic": "Nest" },
+      { "hiragana": "の", "katakana": "ノ", "romaji": "no", "mnemonic": "Nose" }
+    ]
+  },
+  {
+    "id": "kana-ha-row",
+    "row": "は行",
+    "items": [
+      { "hiragana": "は", "katakana": "ハ", "romaji": "ha", "mnemonic": "Hat" },
+      { "hiragana": "ひ", "katakana": "ヒ", "romaji": "hi", "mnemonic": "Hippo" },
+      { "hiragana": "ふ", "katakana": "フ", "romaji": "fu", "mnemonic": "Fuji" },
+      { "hiragana": "へ", "katakana": "ヘ", "romaji": "he", "mnemonic": "Helicopter" },
+      { "hiragana": "ほ", "katakana": "ホ", "romaji": "ho", "mnemonic": "Honey" }
+    ]
+  },
+  {
+    "id": "kana-ma-row",
+    "row": "ま行",
+    "items": [
+      { "hiragana": "ま", "katakana": "マ", "romaji": "ma", "mnemonic": "Mama" },
+      { "hiragana": "み", "katakana": "ミ", "romaji": "mi", "mnemonic": "Milk" },
+      { "hiragana": "む", "katakana": "ム", "romaji": "mu", "mnemonic": "Moon" },
+      { "hiragana": "め", "katakana": "メ", "romaji": "me", "mnemonic": "Melon" },
+      { "hiragana": "も", "katakana": "モ", "romaji": "mo", "mnemonic": "Monkey" }
+    ]
+  },
+  {
+    "id": "kana-ya-row",
+    "row": "や行",
+    "items": [
+      { "hiragana": "や", "katakana": "ヤ", "romaji": "ya", "mnemonic": "Yak" },
+      { "hiragana": "ゆ", "katakana": "ユ", "romaji": "yu", "mnemonic": "Yoyo" },
+      { "hiragana": "よ", "katakana": "ヨ", "romaji": "yo", "mnemonic": "Yoga" }
+    ]
+  },
+  {
+    "id": "kana-ra-row",
+    "row": "ら行",
+    "items": [
+      { "hiragana": "ら", "katakana": "ラ", "romaji": "ra", "mnemonic": "Rabbit" },
+      { "hiragana": "り", "katakana": "リ", "romaji": "ri", "mnemonic": "Ring" },
+      { "hiragana": "る", "katakana": "ル", "romaji": "ru", "mnemonic": "Ruler" },
+      { "hiragana": "れ", "katakana": "レ", "romaji": "re", "mnemonic": "Red" },
+      { "hiragana": "ろ", "katakana": "ロ", "romaji": "ro", "mnemonic": "Robot" }
+    ]
+  },
+  {
+    "id": "kana-wa-row",
+    "row": "わ行",
+    "items": [
+      { "hiragana": "わ", "katakana": "ワ", "romaji": "wa", "mnemonic": "Water" },
+      { "hiragana": "を", "katakana": "ヲ", "romaji": "wo", "mnemonic": "Wo (particle)" },
+      { "hiragana": "ん", "katakana": "ン", "romaji": "n", "mnemonic": "N (final sound)" }
+    ]
+  },
+  {
+    "id": "kana-voiced-ga-row",
+    "row": "が行（濁音）",
+    "items": [
+      { "hiragana": "が", "katakana": "ガ", "romaji": "ga", "mnemonic": "Garlic" },
+      { "hiragana": "ぎ", "katakana": "ギ", "romaji": "gi", "mnemonic": "Guitar" },
+      { "hiragana": "ぐ", "katakana": "グ", "romaji": "gu", "mnemonic": "Gum" },
+      { "hiragana": "げ", "katakana": "ゲ", "romaji": "ge", "mnemonic": "Gem" },
+      { "hiragana": "ご", "katakana": "ゴ", "romaji": "go", "mnemonic": "Gold" }
+    ]
+  },
+  {
+    "id": "kana-voiced-za-row",
+    "row": "ざ行（濁音）",
+    "items": [
+      { "hiragana": "ざ", "katakana": "ザ", "romaji": "za", "mnemonic": "Zebra" },
+      { "hiragana": "じ", "katakana": "ジ", "romaji": "ji", "mnemonic": "Jeans" },
+      { "hiragana": "ず", "katakana": "ズ", "romaji": "zu", "mnemonic": "Zoo" },
+      { "hiragana": "ぜ", "katakana": "ゼ", "romaji": "ze", "mnemonic": "Zeppelin" },
+      { "hiragana": "ぞ", "katakana": "ゾ", "romaji": "zo", "mnemonic": "Zone" }
+    ]
+  },
+  {
+    "id": "kana-voiced-da-row",
+    "row": "だ行（濁音）",
+    "items": [
+      { "hiragana": "だ", "katakana": "ダ", "romaji": "da", "mnemonic": "Dad" },
+      { "hiragana": "ぢ", "katakana": "ヂ", "romaji": "di", "mnemonic": "Dice" },
+      { "hiragana": "づ", "katakana": "ヅ", "romaji": "du", "mnemonic": "Duke" },
+      { "hiragana": "で", "katakana": "デ", "romaji": "de", "mnemonic": "Desk" },
+      { "hiragana": "ど", "katakana": "ド", "romaji": "do", "mnemonic": "Door" }
+    ]
+  },
+  {
+    "id": "kana-voiced-ba-row",
+    "row": "ば行（濁音）",
+    "items": [
+      { "hiragana": "ば", "katakana": "バ", "romaji": "ba", "mnemonic": "Ball" },
+      { "hiragana": "び", "katakana": "ビ", "romaji": "bi", "mnemonic": "Bee" },
+      { "hiragana": "ぶ", "katakana": "ブ", "romaji": "bu", "mnemonic": "Bus" },
+      { "hiragana": "べ", "katakana": "ベ", "romaji": "be", "mnemonic": "Bed" },
+      { "hiragana": "ぼ", "katakana": "ボ", "romaji": "bo", "mnemonic": "Box" }
+    ]
+  },
+  {
+    "id": "kana-semi-voiced-pa-row",
+    "row": "ぱ行（半濁音）",
+    "items": [
+      { "hiragana": "ぱ", "katakana": "パ", "romaji": "pa", "mnemonic": "Papa" },
+      { "hiragana": "ぴ", "katakana": "ピ", "romaji": "pi", "mnemonic": "Pig" },
+      { "hiragana": "ぷ", "katakana": "プ", "romaji": "pu", "mnemonic": "Pup" },
+      { "hiragana": "ぺ", "katakana": "ペ", "romaji": "pe", "mnemonic": "Penguin" },
+      { "hiragana": "ぽ", "katakana": "ポ", "romaji": "po", "mnemonic": "Pot" }
+    ]
+  }
+]

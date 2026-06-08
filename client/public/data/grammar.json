@@ -1,0 +1,382 @@
+[
+  {
+    "id": "grammar-001",
+    "level": "N5",
+    "titleZh": "基本肯定句",
+    "pattern": "【 A は B です 】",
+    "meaningZh": "A 是 B",
+    "explanationZh": "用來表示身份、狀態或性質。は是主題標記助詞。",
+    "matchKeywords": ["は", "です"],
+    "examples": [
+      {
+        "ja": "私は学生です。",
+        "zhLiteral": "我是學生。"
+      },
+      {
+        "ja": "これは本です。",
+        "zhLiteral": "這是書。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-002",
+    "level": "N5",
+    "titleZh": "基本否定句",
+    "pattern": "【 A は B では ありません 】/【 じゃ ありません 】",
+    "meaningZh": "A 不是 B",
+    "explanationZh": "では ありません 比較正式（書面或禮貌），口語通常會講 じゃ ありません。",
+    "matchKeywords": ["では", "ありません"],
+    "examples": [
+      {
+        "ja": "私は学生ではありません。",
+        "zhLiteral": "我不是學生。"
+      },
+      {
+        "ja": "これは猫じゃありません。",
+        "zhLiteral": "這不是貓。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-003",
+    "level": "N5",
+    "titleZh": "疑問句",
+    "pattern": "【 A は B ですか 】",
+    "meaningZh": "A 是 B 嗎？",
+    "explanationZh": "在陳述句末尾加上ですか就變成疑問句。",
+    "matchKeywords": ["ですか"],
+    "examples": [
+      {
+        "ja": "あなたは学生ですか。",
+        "zhLiteral": "你是學生嗎？"
+      },
+      {
+        "ja": "これは何ですか。",
+        "zhLiteral": "這是什麼？"
+      }
+    ]
+  },
+  {
+    "id": "grammar-004",
+    "level": "N5",
+    "titleZh": "目的語標記",
+    "pattern": "【 A を V 】",
+    "meaningZh": "做 A（動作的對象）",
+    "explanationZh": "を是目的語標記助詞，表示動詞的直接對象。",
+    "matchKeywords": ["を"],
+    "examples": [
+      {
+        "ja": "私は毎日日本語を勉強します。",
+        "zhLiteral": "我每天學習日語。"
+      },
+      {
+        "ja": "水を飲みます。",
+        "zhLiteral": "喝水。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-005",
+    "level": "N5",
+    "titleZh": "目的地標記",
+    "pattern": "【 A に 行く 】",
+    "meaningZh": "去 A（地點）",
+    "explanationZh": "に表示目的地或方向。",
+    "matchKeywords": ["に", "行く"],
+    "examples": [
+      {
+        "ja": "私は学校に行きます。",
+        "zhLiteral": "我去學校。"
+      },
+      {
+        "ja": "図書館に行きました。",
+        "zhLiteral": "去了圖書館。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-006",
+    "level": "N5",
+    "titleZh": "存在表達",
+    "pattern": "【 A は B に います/あります 】",
+    "meaningZh": "A 在 B（有生物用います，無生物用あります）",
+    "explanationZh": "表示事物的存在位置。有生命的用います，無生命的用あります。",
+    "matchKeywords": ["に", "います", "あります"],
+    "examples": [
+      {
+        "ja": "猫が机の上にいます。",
+        "zhLiteral": "貓在桌子上。"
+      },
+      {
+        "ja": "ペンが鞄にあります。",
+        "zhLiteral": "筆在包裡。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-007",
+    "level": "N4",
+    "titleZh": "過去時態",
+    "pattern": "【 A は B でした 】",
+    "meaningZh": "A 曾經是 B（過去）",
+    "explanationZh": "です的過去式是でした。",
+    "matchKeywords": ["でした"],
+    "examples": [
+      {
+        "ja": "昨日は雨でした。",
+        "zhLiteral": "昨天下雨了。"
+      },
+      {
+        "ja": "去年は学生でした。",
+        "zhLiteral": "去年是學生。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-008",
+    "level": "N4",
+    "titleZh": "ます形過去式",
+    "pattern": "【 V-ました 】",
+    "meaningZh": "做了...（過去完成）",
+    "explanationZh": "ます形動詞的過去式。",
+    "matchKeywords": ["ました"],
+    "examples": [
+      {
+        "ja": "昨日は公園に行きました。",
+        "zhLiteral": "昨天去了公園。"
+      },
+      {
+        "ja": "朝ご飯を食べました。",
+        "zhLiteral": "吃了早飯。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-009",
+    "level": "N4",
+    "titleZh": "原因理由",
+    "pattern": "【 A だから B 】",
+    "meaningZh": "因為 A，所以 B",
+    "explanationZh": "だから表示因果關係。",
+    "matchKeywords": ["だから"],
+    "examples": [
+      {
+        "ja": "雨だから、家にいます。",
+        "zhLiteral": "因為下雨，所以在家。"
+      },
+      {
+        "ja": "疲れたから、休みます。",
+        "zhLiteral": "因為累了，所以休息。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-010",
+    "level": "N4",
+    "titleZh": "並列連接",
+    "pattern": "【 A と B 】",
+    "meaningZh": "A 和 B（並列）",
+    "explanationZh": "と用於連接兩個名詞或概念。",
+    "matchKeywords": ["と"],
+    "examples": [
+      {
+        "ja": "猫と犬が好きです。",
+        "zhLiteral": "喜歡貓和狗。"
+      },
+      {
+        "ja": "私と友達が公園に行きました。",
+        "zhLiteral": "我和朋友去了公園。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-011",
+    "level": "N3",
+    "titleZh": "條件句",
+    "pattern": "【 A たら B 】",
+    "meaningZh": "如果 A，那麼 B",
+    "explanationZh": "表示條件或假設。",
+    "matchKeywords": ["たら"],
+    "examples": [
+      {
+        "ja": "雨が降ったら、家にいます。",
+        "zhLiteral": "如果下雨，就在家。"
+      },
+      {
+        "ja": "時間があったら、映画を見ます。",
+        "zhLiteral": "如果有時間，就看電影。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-012",
+    "level": "N3",
+    "titleZh": "完成體",
+    "pattern": "【 V-てしまった 】",
+    "meaningZh": "已經...了（完成或遺憾）",
+    "explanationZh": "表示動作已經完成，有時帶有遺憾的語氣。",
+    "matchKeywords": ["てしまった"],
+    "examples": [
+      {
+        "ja": "宿題を忘れてしまいました。",
+        "zhLiteral": "忘記做作業了。"
+      },
+      {
+        "ja": "電車に乗り遅れてしまった。",
+        "zhLiteral": "趕不上火車了。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-013",
+    "level": "N3",
+    "titleZh": "被動語態",
+    "pattern": "【 A は B に V-られた 】",
+    "meaningZh": "A 被 B...了",
+    "explanationZh": "表示被動語態。られ是被動標記。",
+    "matchKeywords": ["られた"],
+    "examples": [
+      {
+        "ja": "私は先生に褒められました。",
+        "zhLiteral": "我被老師表揚了。"
+      },
+      {
+        "ja": "彼は警察に逮捕されました。",
+        "zhLiteral": "他被警察逮捕了。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-014",
+    "level": "N3",
+    "titleZh": "使役語態",
+    "pattern": "【 A は B に V-させた 】",
+    "meaningZh": "A 讓 B...了",
+    "explanationZh": "表示使役語態。させ是使役標記。",
+    "matchKeywords": ["させた"],
+    "examples": [
+      {
+        "ja": "先生は学生に勉強させました。",
+        "zhLiteral": "老師讓學生學習了。"
+      },
+      {
+        "ja": "親は子供に宿題をさせます。",
+        "zhLiteral": "父母讓孩子做作業。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-015",
+    "level": "N2",
+    "titleZh": "假定條件",
+    "pattern": "【 A なら B 】",
+    "meaningZh": "如果是 A 的話，B",
+    "explanationZh": "表示假定或推測。",
+    "matchKeywords": ["なら"],
+    "examples": [
+      {
+        "ja": "そうなら、行きます。",
+        "zhLiteral": "如果是那樣的話，我就去。"
+      },
+      {
+        "ja": "時間があるなら、手伝ってください。",
+        "zhLiteral": "如果有時間的話，請幫忙。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-016",
+    "level": "N2",
+    "titleZh": "對比表達",
+    "pattern": "【 A は B ではなく C 】",
+    "meaningZh": "A 不是 B，而是 C",
+    "explanationZh": "表示對比或否定前一個選項。",
+    "matchKeywords": ["ではなく"],
+    "examples": [
+      {
+        "ja": "私は医者ではなく、教師です。",
+        "zhLiteral": "我不是醫生，而是教師。"
+      },
+      {
+        "ja": "これは猫ではなく、犬です。",
+        "zhLiteral": "這不是貓，而是狗。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-017",
+    "level": "N2",
+    "titleZh": "應該...的",
+    "pattern": "【 V-べき 】",
+    "meaningZh": "應該...（義務或建議）",
+    "explanationZh": "表示應該做某事，帶有義務或建議的含義。",
+    "matchKeywords": ["べき"],
+    "examples": [
+      {
+        "ja": "毎日勉強すべきです。",
+        "zhLiteral": "應該每天學習。"
+      },
+      {
+        "ja": "健康のため、運動すべきです。",
+        "zhLiteral": "為了健康，應該運動。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-018",
+    "level": "N1",
+    "titleZh": "即使...也...",
+    "pattern": "【 A ても B 】",
+    "meaningZh": "即使 A，也 B（讓步）",
+    "explanationZh": "表示讓步或對比。",
+    "matchKeywords": ["ても"],
+    "examples": [
+      {
+        "ja": "雨が降っても、行きます。",
+        "zhLiteral": "即使下雨，也要去。"
+      },
+      {
+        "ja": "難しくても、頑張ります。",
+        "zhLiteral": "即使困難，也要努力。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-019",
+    "level": "N1",
+    "titleZh": "只要...就...",
+    "pattern": "【 A さえ B 】",
+    "meaningZh": "只要 A，就 B（充分條件）",
+    "explanationZh": "表示只要滿足某條件就能達成結果。",
+    "matchKeywords": ["さえ"],
+    "examples": [
+      {
+        "ja": "努力さえすれば、成功します。",
+        "zhLiteral": "只要努力，就能成功。"
+      },
+      {
+        "ja": "時間さえあれば、できます。",
+        "zhLiteral": "只要有時間，就能做。"
+      }
+    ]
+  },
+  {
+    "id": "grammar-020",
+    "level": "N1",
+    "titleZh": "據說...",
+    "pattern": "【 A そうだ 】",
+    "meaningZh": "據說 A...（傳聞）",
+    "explanationZh": "表示根據傳聞或聽說的信息。",
+    "matchKeywords": ["そうだ"],
+    "examples": [
+      {
+        "ja": "明日は雨だそうです。",
+        "zhLiteral": "據說明天會下雨。"
+      },
+      {
+        "ja": "彼は日本に行ったそうです。",
+        "zhLiteral": "據說他去了日本。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "name": "勉強地勉強",
+  "short_name": "勉勉強強",
+  "description": "日文初學者溫習網站 - 五十音、文法、詞彙、練習",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#D4A574",
+  "background_color": "#F5F1ED",
+  "icons": [
+    {
+      "src": "/manus-storage/logo_0ebfce3c.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/manus-storage/logo_0ebfce3c.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/manus-storage/logo_0ebfce3c.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "shortcuts": [
+    {
+      "name": "搜尋",
+      "short_name": "搜尋",
+      "description": "搜尋日文內容",
+      "url": "/?action=search",
+      "icons": [
+        {
+          "src": "/manus-storage/logo_0ebfce3c.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "文法",
+      "short_name": "文法",
+      "description": "查看文法",
+      "url": "/grammar",
+      "icons": [
+        {
+          "src": "/manus-storage/logo_0ebfce3c.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "練習",
+      "short_name": "練習",
+      "description": "進行練習",
+      "url": "/practice",
+      "icons": [
+        {
+          "src": "/manus-storage/logo_0ebfce3c.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

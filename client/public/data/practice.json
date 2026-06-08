@@ -1,0 +1,147 @@
+[
+  {
+    "id": "practice-kana-001",
+    "type": "kana-choice",
+    "difficulty": "easy",
+    "question": "以下のひらがなは何ですか？",
+    "display": "あ",
+    "options": [
+      { "text": "a", "correct": true },
+      { "text": "i", "correct": false },
+      { "text": "u", "correct": false },
+      { "text": "e", "correct": false }
+    ],
+    "explanation": "「あ」は「a」の音です。"
+  },
+  {
+    "id": "practice-kana-002",
+    "type": "kana-choice",
+    "difficulty": "easy",
+    "question": "以下のカタカナは何ですか？",
+    "display": "カ",
+    "options": [
+      { "text": "ka", "correct": true },
+      { "text": "ki", "correct": false },
+      { "text": "ku", "correct": false },
+      { "text": "ke", "correct": false }
+    ],
+    "explanation": "「カ」は「ka」の音です。"
+  },
+  {
+    "id": "practice-vocab-001",
+    "type": "vocab-choice",
+    "difficulty": "easy",
+    "question": "「学生」の意味は何ですか？",
+    "options": [
+      { "text": "學生", "correct": true },
+      { "text": "老師", "correct": false },
+      { "text": "學校", "correct": false },
+      { "text": "書", "correct": false }
+    ],
+    "explanation": "「学生」は「がくせい」と読み、學生という意味です。"
+  },
+  {
+    "id": "practice-vocab-002",
+    "type": "vocab-choice",
+    "difficulty": "easy",
+    "question": "「猫」の意味は何ですか？",
+    "options": [
+      { "text": "貓", "correct": true },
+      { "text": "狗", "correct": false },
+      { "text": "鳥", "correct": false },
+      { "text": "魚", "correct": false }
+    ],
+    "explanation": "「猫」は「ねこ」と読み、貓という意味です。"
+  },
+  {
+    "id": "practice-vocab-003",
+    "type": "vocab-choice",
+    "difficulty": "medium",
+    "question": "「寿司」の意味は何ですか？",
+    "options": [
+      { "text": "壽司", "correct": true },
+      { "text": "拉麵", "correct": false },
+      { "text": "天婦羅", "correct": false },
+      { "text": "烏冬", "correct": false }
+    ],
+    "explanation": "「寿司」は「すし」と読み、壽司という意味です。"
+  },
+  {
+    "id": "practice-vocab-004",
+    "type": "vocab-choice",
+    "difficulty": "medium",
+    "question": "「勉強する」の意味は何ですか？",
+    "options": [
+      { "text": "學習", "correct": true },
+      { "text": "工作", "correct": false },
+      { "text": "遊ぶ", "correct": false },
+      { "text": "睡覺", "correct": false }
+    ],
+    "explanation": "「勉強する」は「べんきょうする」と読み、學習という意味です。"
+  },
+  {
+    "id": "practice-grammar-001",
+    "type": "grammar-fill",
+    "difficulty": "easy",
+    "question": "私は 学生 _____。",
+    "options": [
+      { "text": "です", "correct": true },
+      { "text": "ます", "correct": false },
+      { "text": "ません", "correct": false },
+      { "text": "ですか", "correct": false }
+    ],
+    "explanation": "「です」は名詞の後に使い、身份や状態を表します。"
+  },
+  {
+    "id": "practice-grammar-002",
+    "type": "grammar-fill",
+    "difficulty": "easy",
+    "question": "彼は 学生 _____ ありません。",
+    "options": [
+      { "text": "では", "correct": true },
+      { "text": "は", "correct": false },
+      { "text": "を", "correct": false },
+      { "text": "に", "correct": false }
+    ],
+    "explanation": "「では ありません」は否定文を作ります。"
+  },
+  {
+    "id": "practice-grammar-003",
+    "type": "grammar-fill",
+    "difficulty": "medium",
+    "question": "私は 毎日 日本語 _____ 勉強します。",
+    "options": [
+      { "text": "を", "correct": true },
+      { "text": "は", "correct": false },
+      { "text": "に", "correct": false },
+      { "text": "で", "correct": false }
+    ],
+    "explanation": "「を」は目的語助詞で、動詞の直接目的語を表します。"
+  },
+  {
+    "id": "practice-grammar-004",
+    "type": "grammar-fill",
+    "difficulty": "medium",
+    "question": "私は 学校 _____ 行きます。",
+    "options": [
+      { "text": "に", "correct": true },
+      { "text": "を", "correct": false },
+      { "text": "は", "correct": false },
+      { "text": "で", "correct": false }
+    ],
+    "explanation": "「に」は目的地を表す助詞です。"
+  },
+  {
+    "id": "practice-grammar-005",
+    "type": "grammar-fill",
+    "difficulty": "hard",
+    "question": "雨が 降ったら、私は 家 _____ います。",
+    "options": [
+      { "text": "に", "correct": true },
+      { "text": "を", "correct": false },
+      { "text": "で", "correct": false },
+      { "text": "は", "correct": false }
+    ],
+    "explanation": "「に」は存在の場所を表します。「います」の前に使う場合、「に」を使います。"
+  }
+]

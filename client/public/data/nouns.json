@@ -1,0 +1,222 @@
+[
+  {
+    "id": "noun-001",
+    "wordJa": "学生",
+    "kana": "がくせい",
+    "romaji": "gakusei",
+    "meaningZh": "學生",
+    "pitchAccent": 0,
+    "category": "人物",
+    "examples": ["私は学生です。", "学生は勉強します。"],
+    "tags": ["人物", "教育"]
+  },
+  {
+    "id": "noun-002",
+    "wordJa": "先生",
+    "kana": "せんせい",
+    "romaji": "sensei",
+    "meaningZh": "老師",
+    "pitchAccent": 0,
+    "category": "人物",
+    "examples": ["先生は親切です。", "先生に質問します。"],
+    "tags": ["人物", "教育"]
+  },
+  {
+    "id": "noun-003",
+    "wordJa": "学校",
+    "kana": "がっこう",
+    "romaji": "gakkō",
+    "meaningZh": "學校",
+    "pitchAccent": 0,
+    "category": "場所",
+    "examples": ["学校に行きます。", "学校は大きいです。"],
+    "tags": ["場所", "教育"]
+  },
+  {
+    "id": "noun-004",
+    "wordJa": "本",
+    "kana": "ほん",
+    "romaji": "hon",
+    "meaningZh": "書",
+    "pitchAccent": 1,
+    "category": "物品",
+    "examples": ["本を読みます。", "図書館に本があります。"],
+    "tags": ["物品", "閱讀"]
+  },
+  {
+    "id": "noun-005",
+    "wordJa": "猫",
+    "kana": "ねこ",
+    "romaji": "neko",
+    "meaningZh": "貓",
+    "pitchAccent": 1,
+    "category": "動物",
+    "examples": ["猫は可愛いです。", "猫が います。"],
+    "tags": ["動物", "寵物"]
+  },
+  {
+    "id": "noun-006",
+    "wordJa": "犬",
+    "kana": "いぬ",
+    "romaji": "inu",
+    "meaningZh": "狗",
+    "pitchAccent": 1,
+    "category": "動物",
+    "examples": ["犬は友達です。", "犬を飼っています。"],
+    "tags": ["動物", "寵物"]
+  },
+  {
+    "id": "noun-007",
+    "wordJa": "水",
+    "kana": "みず",
+    "romaji": "mizu",
+    "meaningZh": "水",
+    "pitchAccent": 1,
+    "category": "物品",
+    "examples": ["水を飲みます。", "水は大切です。"],
+    "tags": ["物品", "飲食"]
+  },
+  {
+    "id": "noun-008",
+    "wordJa": "机",
+    "kana": "つくえ",
+    "romaji": "tsukue",
+    "meaningZh": "桌子",
+    "pitchAccent": 2,
+    "category": "家具",
+    "examples": ["机の上にペンがあります。", "机で勉強します。"],
+    "tags": ["家具", "家"]
+  },
+  {
+    "id": "noun-009",
+    "wordJa": "椅子",
+    "kana": "いす",
+    "romaji": "isu",
+    "meaningZh": "椅子",
+    "pitchAccent": 1,
+    "category": "家具",
+    "examples": ["椅子に座ります。", "椅子は赤いです。"],
+    "tags": ["家具", "家"]
+  },
+  {
+    "id": "noun-010",
+    "wordJa": "窓",
+    "kana": "まど",
+    "romaji": "mado",
+    "meaningZh": "窗戶",
+    "pitchAccent": 1,
+    "category": "建築",
+    "examples": ["窓を開けます。", "窓から景色が見えます。"],
+    "tags": ["建築", "家"]
+  },
+  {
+    "id": "noun-011",
+    "wordJa": "食べ物",
+    "kana": "たべもの",
+    "romaji": "tabemono",
+    "meaningZh": "食物",
+    "pitchAccent": 2,
+    "category": "飲食",
+    "examples": ["食べ物は美味しいです。", "食べ物を準備します。"],
+    "tags": ["飲食", "食物"]
+  },
+  {
+    "id": "noun-012",
+    "wordJa": "寿司",
+    "kana": "すし",
+    "romaji": "sushi",
+    "meaningZh": "壽司",
+    "pitchAccent": 1,
+    "category": "飲食",
+    "examples": ["寿司を食べます。", "寿司は日本の食べ物です。"],
+    "tags": ["飲食", "日本料理"]
+  },
+  {
+    "id": "noun-013",
+    "wordJa": "天気",
+    "kana": "てんき",
+    "romaji": "tenki",
+    "meaningZh": "天氣",
+    "pitchAccent": 1,
+    "category": "自然",
+    "examples": ["天気が良いです。", "天気予報を見ます。"],
+    "tags": ["自然", "天氣"]
+  },
+  {
+    "id": "noun-014",
+    "wordJa": "雨",
+    "kana": "あめ",
+    "romaji": "ame",
+    "meaningZh": "雨",
+    "pitchAccent": 1,
+    "category": "自然",
+    "examples": ["雨が降っています。", "雨の日は傘を持ちます。"],
+    "tags": ["自然", "天氣"]
+  },
+  {
+    "id": "noun-015",
+    "wordJa": "太陽",
+    "kana": "たいよう",
+    "romaji": "taiyō",
+    "meaningZh": "太陽",
+    "pitchAccent": 0,
+    "category": "自然",
+    "examples": ["太陽は明るいです。", "太陽が出ています。"],
+    "tags": ["自然", "天氣"]
+  },
+  {
+    "id": "noun-016",
+    "wordJa": "時間",
+    "kana": "じかん",
+    "romaji": "jikan",
+    "meaningZh": "時間",
+    "pitchAccent": 1,
+    "category": "時間",
+    "examples": ["時間がありません。", "時間を守ります。"],
+    "tags": ["時間"]
+  },
+  {
+    "id": "noun-017",
+    "wordJa": "朝",
+    "kana": "あさ",
+    "romaji": "asa",
+    "meaningZh": "早上",
+    "pitchAccent": 1,
+    "category": "時間",
+    "examples": ["朝は6時に起きます。", "朝ご飯を食べます。"],
+    "tags": ["時間"]
+  },
+  {
+    "id": "noun-018",
+    "wordJa": "夜",
+    "kana": "よる",
+    "romaji": "yoru",
+    "meaningZh": "晚上",
+    "pitchAccent": 1,
+    "category": "時間",
+    "examples": ["夜は星が見えます。", "夜中に起きました。"],
+    "tags": ["時間"]
+  },
+  {
+    "id": "noun-019",
+    "wordJa": "友達",
+    "kana": "ともだち",
+    "romaji": "tomodachi",
+    "meaningZh": "朋友",
+    "pitchAccent": 2,
+    "category": "人物",
+    "examples": ["友達と遊びます。", "友達は親切です。"],
+    "tags": ["人物", "人際"]
+  },
+  {
+    "id": "noun-020",
+    "wordJa": "家族",
+    "kana": "かぞく",
+    "romaji": "kazoku",
+    "meaningZh": "家族",
+    "pitchAccent": 1,
+    "category": "人物",
+    "examples": ["家族と一緒に住んでいます。", "家族が大切です。"],
+    "tags": ["人物", "家庭"]
+  }
+]
