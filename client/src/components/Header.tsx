@@ -28,7 +28,7 @@ export default function Header() {
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <img
-              src="/manus-storage/logo_0ebfce3c.png"
+              src="/benkyou-benkyou/logo.png"
               alt="Logo"
               className="w-16 h-16 rounded-lg"
             />
